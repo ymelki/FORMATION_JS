@@ -474,7 +474,51 @@ fs
 
         VAR1=100
         VAR2=343
-        VAR3=232
+        VAR3=232 
+ 
+
+        if (VAR1 < VAR2 ){
+            VARMIN1=VAR1
+        }
+        else {
+            VARMIN1=VAR2
+        }
+
+        if (VARMIN1 > VAR3 ){
+            VARMIN1=VAR3
+        }
+
+
+
+
+        if (VAR1 > VAR2 ){
+            VARMAX1=VAR1
+        }
+        else {
+            VARMAX1=VAR2
+        }
+
+        if (VARMAX1 < VAR3 ){
+            VARMAX1=VAR3
+        }
+
+
+        /*
+        VARMAX
+        */
+
+        VARMIN=99999 // HYPOTHESES QUE LA VALEUR LA PLUS GRANDE EST 0 
+        if (   VARMIN > VAR1 ) { // JE TESTE 
+            VARMIN = VAR1 // SI CEST FAUX SUR VAR1 VARXMAX =VAR1
+        }
+
+        if (   VARMIN > VAR2 ) {
+            VARMIN = VAR2
+        }
+
+        if (   VARMIN > VAR3 ) {
+            VARMIN = VAR3
+        }
 
 
         /*
@@ -495,9 +539,9 @@ fs
         }
 
 
-        console.log("La valeur MAX est : " + VARMAX)
+        console.log("La valeur MAX est : " + VARMAX1)
 
-        console.log("La valeur MIN est : ")
+        console.log("La valeur MIN est : " + VARMIN)
 
 
 
