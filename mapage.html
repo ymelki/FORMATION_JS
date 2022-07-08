@@ -139,8 +139,8 @@
 
 
         // DEFI 5 : CREEZ DEUX VARIABLE CONTENANT DANS CHACUNE DES VARIABLES DES PRENOMS ET VOUS ALLER AFFICHER DANS LA CONSOLE INDIQUANT SI CES PRENOMS SONT DIFFERENTS OU IDENTIQUES
-
-        PRENOM1= "YOEL"// VALEUR AVEC DES CARACTERES ALPHANUMERIQUES
+ 
+        PRENOM1= YOEL// VALEUR AVEC DES CARACTERES ALPHANUMERIQUES
         PRENOM2= "YOEL"// VALEUR AVEC DES CARACTERES ALPHANUMERIQUES
 
         if (PRENOM1 == PRENOM2) {
@@ -167,24 +167,24 @@
         // AFFICHER LES NOMBRE DE 0 A 100
         // BOUCLE (DEMARE I = 0 ; I< 100 ; AJOUTE 1) { i++ / i=i+1
             // DROIT DE MANIPULER LA VARIABLE I 
-        // }
-        for (i=10; i<=5 ; i=i+10) {
-          console.log("La valeur de i est : "+ i) 
-        }
-
+        // } 
  
 
 
         // DEFI 6 : AFFICHER dANS la CONSOLE LES NOMBRE DE 1 A 100
-        for (i=0; i<=100 ; i++) {
+        // i=i+1   ==   i++   i+
+        for (i=0; i<=100 ; i=i+1) {
             console.log("La valeur de i est : "+ i) 
-          }
+        }
+          
+
+          
         // DEFI 7 : AFFICHER dANS la CONSOLE LES NOMBRE DE 100 A 200
         for (i=100; i<=200 ; i++) {
             console.log("La valeur de i est : "+ i) 
           }
         // DEFI 8 : AFFICHER dANS la CONSOLE LA TABLE DE MULTIPLICATION DE 2
-        for (i=1; i<=10 ; i++) {
+        for (i=0; i<=10 ; i++) {
             RESULT=i * 2
           console.log("2 * " + i + " = " + RESULT )
         }
@@ -208,7 +208,7 @@
     
         for (i=0; i < 100; i++ ) { 
            if ( ( (i % 2) ==0  )) {
-                 console.log(i)
+               console.log(i)
            }
 
       
@@ -247,20 +247,56 @@
 
         // NB=4 1+2+3+4 = 10
 
+
+        // 
         // DEFI 11  : creer une variable nb = 100
         // AFFICHER LE RESULTAT DE LA factorielle 100 :  DE 1 *2 *3 *4 .. * 100
+
+        // DEFI 12 : CREEZ UNE VARIABLE avec une affectation de valeur que vous choisissez. Creez une autre variable contenant le carré de la variable précédente
+        // et vous l'afficher . X=3 . Y=3 au carré . Affichez cette variable
+
+        // DEFI 13 : CREEZ 3 VARIABLES QUI CONTIENNENT DES NOTES . VOus affichez dans une 4 eme variables la moyenne et afficher cette variable.
+        // francais = 12 Anglais = 15 math = 10 
+
+        // DEFI 14  : CREEZ UNE VARIABLE AGE  vous allez affectez une valeur  indiquez si  ”Poussin” de 6 à 7 ans
+       // ”Pupille” de 8 à 9 ans
+       // ”Minime” de 10 à 11 ans
+      //  ”Cadet” après 12 ans
+
+      // DEFI 15 : Affichez toute les tables de multiplication de 1 à 10
+ 
  
 
 
-        // 4 FONCTIONS
 
 
 
 
-
-
-        NB_SOMME=3
+        NB_SOMME=100
         // 1 + 2 +3 
+
+        // ACCUMULATION
+        RESULTAT=1
+
+        for (i=0; i <= NB_SOMME ; i++){ 
+
+            RESULTAT=RESULTAT+i
+ 
+
+             
+        }
+
+
+
+
+
+
+
+
+
+
+
+        // NB= 5  
 
        RESULTAT=0
         for (i=0; i <= NB_SOMME ; i++){ 
@@ -272,6 +308,7 @@
  
 
 
+
         // J ECRIS DU CODE JAVASCRIPT
 
         // J AFFICHE DANS LA CONSOLE : BONJOUR
@@ -280,6 +317,32 @@
 
 
         // JE TERMINE MON CODE JAVASCRIPT
+
+
+        /**
+
+        . Echanger les valeurs de 3 variables
+Problème : Echanger les valeurs de 3 variables R, Q et V. Dans V, mettre Q, dans Q, mettre R et dans R, mettre V.
+R <- 5
+Q <- 34
+V <- 45
+addition
+moyenne
+division
+        Commentaire
+        Variable 
+        X=3
+        X+3
+        y=X+3
+        Affiche le carre d'un nombre
+        Comparer deux nombres
+        Ecrire un algorithme qui demande l’âge d’un enfant à l’utilisateur. Ensuite, il l’informe de sa catégorie :
+”Poussin” de 6 à 7 ans
+”Pupille” de 8 à 9 ans
+”Minime” de 10 à 11 ans
+”Cadet” après 12 ans
+Afficher la table de multiplication de 5
+        */
     </script>
 
 
